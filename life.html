@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Life OS | OS Smart</title>
+
+    <link rel="stylesheet" href="life.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <!-- ================= Background ================= -->
+
+    <div class="background-icons">
+
+        <div class="background-icons">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+        
+            <i class="fa-solid fa-bag-shopping"></i>
+        
+            <i class="fa-solid fa-heart"></i>
+        
+            <i class="fa-solid fa-leaf"></i>
+        
+            <i class="fa-solid fa-mug-hot"></i>
+        
+            <i class="fa-solid fa-apple-whole"></i>
+        
+            <i class="fa-solid fa-person-running"></i>
+        
+            <i class="fa-solid fa-bicycle"></i>
+        
+            <i class="fa-solid fa-house"></i>
+        
+            <i class="fa-solid fa-plane"></i>
+        
+            <i class="fa-solid fa-suitcase"></i>
+        
+            <i class="fa-solid fa-bullseye"></i>
+        
+            <i class="fa-solid fa-droplet"></i>
+        
+            <i class="fa-solid fa-star"></i>
+        
+            <i class="fa-solid fa-lightbulb"></i>
+        
+        </div>
+
+    </div>
+
+    <!-- ================= Navbar ================= -->
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+    
+        <div class="logo">
+    
+            🌍 <span style="font-weight: 300;">Life OS</span>
+    
+        </div>
+    
+        <ul class="nav-links">
+    
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Habits</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Goals</a></li>
+            <li><a href="#">Health</a></li>
+    
+        </ul>
+    
+        <div class="nav-right">
+    
+            <button class="profile-btn">
+    
+                👤 Abdullah
+    
+            </button>
+    
+        </div>
+    
+    </nav>
+
+    <!-- ================= Hero ================= -->
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+    
+        <div class="hero-card">
+    
+            <div class="hero-text">
+    
+                <h1 id="greeting">👋 Good Morning, Abdullah</h1>
+    
+                <p class="subtitle">
+    
+                    Your personal life dashboard.
+    
+                </p>
+    
+
+    
+
+    
+
+    
+                           <h3>Small progress every day leads to big results.</h3> 
+    
+                    
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- ================= Dashboard ================= -->
+
+<section>
+    <!-- ================= WATER TRACKER ================= -->
+
+<section class="water-section">
+    <h1 style="font-weight: 300; text-align: center;">❤️ Health</h1>
+
+    <div class="water-card">
+
+        <h2 style="font-weight: 300;">💧 Water Tracker</h2>
+
+        <h1 id="waterCount">0 / 8</h1>
+
+        <div class="progress">
+
+            <div class="progress-fill" id="progressFill"></div>
+
+        </div>
+
+        <p id="waterPercent">0%</p>
+
+        <div class="water-buttons">
+
+            <button id="addWater">+ Add Glass</button>
+
+            <button id="removeWater">- Remove</button>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= SLEEP TRACKER ================= -->
+
+<section class="sleep-section">
+
+    <div class="sleep-card">
+
+        <h2 style="font-weight: 300;">😴 Sleep Tracker</h2>
+
+        <div class="sleep-inputs">
+
+            <div>
+
+                <label>🌙 Bed Time</label>
+
+                <input type="time" id="bedTime">
+
+            </div>
+
+            <div>
+
+                <label>🌅 Wake Time</label>
+
+                <input type="time" id="wakeTime">
+
+            </div>
+
+        </div>
+
+        <button id="calculateSleep">
+
+            Calculate Sleep
+
+        </button>
+
+        <h3 id="sleepResult">
+
+            Sleep: 0 Hours
+
+        </h3>
+
+        <p id="sleepQuality">
+
+            Quality: --
+
+        </p>
+
+    </div>
+
+</section>
+</section>
+<br>
+<section>
+    <!-- ================= MOOD TRACKER ================= -->
+
+<section class="mood-section">
+
+    <div class="mood-card">
+
+        <h2 style="font-weight: 300;">😊 Mood Tracker</h2>
+
+        <p>How are you feeling today?</p>
+
+        <div class="mood-buttons">
+
+            <button class="mood-btn" data-mood="Amazing">😁</button>
+
+            <button class="mood-btn" data-mood="Happy">😊</button>
+
+            <button class="mood-btn" data-mood="Okay">😐</button>
+
+            <button class="mood-btn" data-mood="Sad">😔</button>
+
+            <button class="mood-btn" data-mood="Stressed">😫</button>
+
+        </div>
+
+        <h3 id="selectedMood">
+
+            Today's Mood: None
+
+        </h3>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= STEP TRACKER ================= -->
+
+    <section class="steps-section">
+    
+        <div class="steps-card">
+    
+            <h2 style="font-weight: 300;">👟 Step Tracker</h2>
+    
+            <h1 id="stepCount">0</h1>
+    
+            <p>Today's Steps</p>
+    
+            <div class="progress">
+    
+                <div class="progress-fill" id="stepProgress"></div>
+    
+            </div>
+    
+            <p id="stepPercent">0% of 10,000</p>
+    
+            <div class="step-buttons">
+    
+                <button id="add100">+100</button>
+    
+                <button id="remove100">-100</button>
+    
+                <button id="resetSteps">Reset</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+</section>
+<section>
+    <!-- ================= HEALTHY EATING ================= -->
+
+<section class="food-section">
+
+    <div class="food-card">
+
+        <h2>🍎 Healthy Eating</h2>
+
+        <p class="food-subtitle">Track your meals and nutrition every day.</p>
+
+        <div class="meal-list">
+
+            <label><input type="checkbox" id="breakfast"> 🥣 Breakfast</label>
+
+            <label><input type="checkbox" id="lunch"> 🍛 Lunch</label>
+
+            <label><input type="checkbox" id="dinner"> 🍽 Dinner</label>
+
+            <label><input type="checkbox" id="snacks"> 🍇 Healthy Snack</label>
+
+        </div>
+
+        <hr>
+
+        <div class="food-counter">
+
+            <h3>🍎 Fruits</h3>
+
+            <button id="fruitMinus">−</button>
+
+            <span id="fruitCount">0</span>
+
+            <button id="fruitPlus">+</button>
+
+        </div>
+
+        <div class="food-counter">
+
+            <h3>🥦 Vegetables</h3>
+
+            <button id="vegMinus">−</button>
+
+            <span id="vegCount">0</span>
+
+            <button id="vegPlus">+</button>
+
+        </div>
+
+        <div class="food-counter">
+
+            <h3>🍗 Protein</h3>
+
+            <button id="proteinMinus">−</button>
+
+            <span id="proteinCount">0</span>
+
+            <button id="proteinPlus">+</button>
+
+        </div>
+
+        <hr>
+
+        <h3>🥗 Nutrition Score</h3>
+
+        <div class="progress">
+
+            <div class="progress-fill" id="nutritionBar"></div>
+
+        </div>
+
+        <h2 id="nutritionScore">0%</h2>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= EXERCISE LOG ================= -->
+
+<section class="exercise-section">
+
+    <div class="exercise-card">
+
+        <h2>💪 Exercise Log</h2>
+
+        <div class="exercise-form">
+
+            <select id="exerciseType">
+
+                <option>🚶 Walking</option>
+                <option>🏃 Running</option>
+                <option>🚴 Cycling</option>
+                <option>🏋️ Gym</option>
+                <option>🧘 Yoga</option>
+                <option>🏊 Swimming</option>
+                <option>🏸 Badminton</option>
+                <option>⚽ Football</option>
+
+            </select>
+
+            <input
+                type="number"
+                id="exerciseMinutes"
+                placeholder="Minutes"
+                min="1"
+            >
+
+            <button id="saveExercise">
+                Add Exercise
+            </button>
+
+        </div>
+
+        <div class="progress">
+
+            <div
+                class="progress-fill"
+                id="exerciseProgress">
+            </div>
+
+        </div>
+
+        <p id="exerciseTotal">
+            Total Today: 0 / 60 Minutes
+        </p>
+
+        <ul id="exerciseList"></ul>
+
+    </div>
+
+</section>
+</section>
+<br>
+<section>
+    <!-- ================= BMI CALCULATOR ================= -->
+
+<section class="bmi-section">
+
+    <div class="bmi-card">
+
+        <h2>⚖️ BMI Calculator</h2>
+
+        <p>Check if your weight is in a healthy range.</p>
+
+        <div class="bmi-inputs">
+
+            <input
+                type="number"
+                id="height"
+                placeholder="Height (cm)"
+                min="50"
+            >
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="Weight (kg)"
+                min="1"
+            >
+
+        </div>
+
+        <button id="calculateBMI">
+
+            Calculate BMI
+
+        </button>
+
+        <h1 id="bmiValue">--</h1>
+
+        <h3 id="bmiStatus">
+
+            Status: --
+
+        </h3>
+
+    </div>
+
+</section>
+</section>
+<br>
+<section>
+    <!-- ================= PERSONAL JOURNAL ================= -->
+
+<section class="journal-section">
+
+    <div class="journal-card">
+
+        <h2>✍️ Personal Journal</h2>
+
+        <p>Write about your day, ideas, or memories.</p>
+
+        <input
+        type="text"
+        id="journalTitle"
+        placeholder="Journal Title">
+
+        <textarea
+        id="journalText"
+        placeholder="Write your journal here..."></textarea>
+
+        <button id="saveJournal">
+
+            💾 Save Journal
+
+        </button>
+
+        <h3 class="journal-heading">
+
+            📚 Saved Journals
+
+        </h3>
+
+        <div id="journalList"></div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= PLANT GROWTH TRACKER ================= -->
+
+<section class="plant-section">
+
+    <div class="plant-card">
+
+        <h2>🌱 Plant Growth Tracker</h2>
+
+        <p>Take care of your favourite plant every day.</p>
+
+        <div class="plant-inputs">
+
+            <input
+            type="text"
+            id="plantName"
+            placeholder="Plant Name">
+
+            <input
+            type="date"
+            id="plantDate">
+
+        </div>
+
+        <button id="savePlant">
+
+            💾 Save Plant
+
+        </button>
+
+        <div class="plant-info">
+
+            <h3 id="displayPlant">
+
+                🌿 No Plant Selected
+
+            </h3>
+
+            <p id="plantDays">
+
+                Days Growing: 0
+
+            </p>
+
+            <p id="plantStage">
+
+                Stage: -
+
+            </p>
+
+        </div>
+
+        <div class="plant-progress">
+
+            <div id="plantFill"></div>
+
+        </div>
+
+        <div class="plant-care">
+
+            <label>
+
+                <input type="checkbox" id="waterPlant">
+
+                💧 Watered Today
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" id="sunPlant">
+
+                ☀️ Got Sunlight
+
+            </label>
+
+        </div>
+
+        <textarea
+        id="plantNotes"
+        placeholder="Write notes about your plant..."></textarea>
+
+        <button id="savePlantNotes">
+
+            📝 Save Notes
+
+        </button>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= DAILY QUOTE ================= -->
+
+<section class="quote-section">
+
+    <div class="quote-card">
+
+        <h2>💡 Daily Quote</h2>
+
+        <p class="quote-text" id="quoteText">
+
+            Loading quote...
+
+        </p>
+
+        <h3 class="quote-author" id="quoteAuthor">
+
+            ...
+
+        </h3>
+
+        <div class="quote-buttons">
+
+            <button id="newQuote">
+
+                🔄 New Quote
+
+            </button>
+
+            <button id="copyQuote">
+
+                📋 Copy Quote
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= EVENT PLANNER ================= -->
+
+<section class="event-section">
+
+    <div class="event-card">
+
+        <h2>📅 Event Planner</h2>
+
+        <p>Never miss an important event.</p>
+
+        <div class="event-inputs">
+
+            <input
+            type="text"
+            id="eventName"
+            placeholder="Event Name">
+
+            <input
+            type="date"
+            id="eventDate">
+
+            <button id="addEvent">
+
+                ➕ Add Event
+
+            </button>
+
+        </div>
+
+        <div id="eventList">
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= WEATHER ================= -->
+
+<section class="weather-section">
+
+    <div class="weather-card">
+
+        <h2>🌤 Weather Dashboard</h2>
+
+        <p id="weatherLocation">
+
+            📍 Detecting location...
+
+        </p>
+
+        <div class="weather-main">
+
+            <h1 id="temperature">
+
+                --
+
+            </h1>
+
+            <h3 id="weatherCondition">
+
+                Loading...
+
+            </h3>
+
+        </div>
+
+        <div class="weather-grid">
+
+            <div class="weather-box">
+
+                💧
+
+                <h4>Humidity</h4>
+
+                <p id="humidity">--%</p>
+
+            </div>
+
+            <div class="weather-box">
+
+                🌬️
+
+                <h4>Wind</h4>
+
+                <p id="wind">-- km/h</p>
+
+            </div>
+
+            <div class="weather-box">
+
+                ☁️
+
+                <h4>Cloud Cover</h4>
+
+                <p id="cloud">--%</p>
+
+            </div>
+
+            <div class="weather-box">
+
+                🌧️
+
+                <h4>Rain</h4>
+
+                <p id="rain">0 mm</p>
+
+            </div>
+
+        </div>
+
+        <button id="refreshWeather">
+
+            🔄 Refresh Weather
+
+        </button>
+
+    </div>
+
+</section>
+</section>
+<section>
+<h1 style="text-align: center; font-weight: 300;">🎯 habits</h1>
+<br>
+    <!-- ================= HABIT TRACKER ================= -->
+
+<section class="habit-section">
+
+    <div class="habit-card">
+
+        <h2>🎯 Habit Tracker</h2>
+
+        <p>Build good habits, one day at a time.</p>
+
+        <div class="habit-input">
+
+            <input
+                type="text"
+                id="habitText"
+                placeholder="Enter a new habit..."
+            >
+
+            <button id="addHabit">
+
+                Add
+
+            </button>
+
+        </div>
+
+        <div class="progress">
+
+            <div
+                class="progress-fill"
+                id="habitProgress">
+            </div>
+
+        </div>
+
+        <p id="habitPercent">
+
+            0% Completed
+
+        </p>
+
+        <ul id="habitList"></ul>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= WEEKLY HABITS ================= -->
+
+    <!-- ================= WEEKLY HABITS ================= -->
+
+    <section class="weekly-section">
+    
+        <div class="weekly-card">
+    
+            <h2>🎯 Weekly Habit Tracker</h2>
+    
+            <p>Complete your healthy habits every week.</p>
+    
+            <div class="weekly-grid">
+    
+                <div class="header habit">Habit</div>
+                <div class="header">M</div>
+                <div class="header">T</div>
+                <div class="header">W</div>
+                <div class="header">T</div>
+                <div class="header">F</div>
+                <div class="header">S</div>
+                <div class="header">S</div>
+    
+                <!-- Water -->
+                <div class="habit-name">💧 Drink Water</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Sleep -->
+                <div class="habit-name">😴 Sleep 8 Hours</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Exercise -->
+                <div class="habit-name">🏃 Exercise</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Healthy Eating -->
+                <div class="habit-name">🍎 Healthy Eating</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Walk -->
+                <div class="habit-name">🚶 Walk</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Read -->
+                <div class="habit-name">📖 Read</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Brush Teeth -->
+                <div class="habit-name">🦷 Brush Teeth</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+                <!-- Gratitude -->
+                <div class="habit-name">😊 Gratitude</div>
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+                <input type="checkbox" class="habit-check">
+    
+            </div>
+    
+            <div class="progress">
+    
+                <div class="progress-fill" id="habitBar"></div>
+    
+            </div>
+    
+            <h3 id="habitPercent">
+    
+                Weekly Progress: 0%
+    
+            </h3>
+    
+        </div>
+    
+    </section>
+</section>
+<section>
+    <!-- ================= LIFE GOALS ================= -->
+
+<section class="goals-section">
+
+    <div class="goals-card">
+
+        <h2>🎯 Life Goals</h2>
+
+        <p>Track your personal goals and achievements.</p>
+
+        <div class="goal-input">
+
+            <input
+            type="text"
+            id="goalInput"
+            placeholder="Enter a new goal...">
+
+            <button id="addGoal">
+
+                ➕ Add Goal
+
+            </button>
+
+        </div>
+
+        <div id="goalList">
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= SHOPPING LIST ================= -->
+
+<section class="shopping-section">
+
+    <div class="shopping-card">
+
+        <h2>🛒 Shopping List</h2>
+
+        <p>Never forget what you need to buy.</p>
+
+        <div class="shopping-input">
+
+            <input
+                type="text"
+                id="shoppingInput"
+                placeholder="Add an item..."
+            >
+
+            <button id="addItemBtn">
+
+                Add
+
+            </button>
+
+        </div>
+
+        <div class="progress">
+
+            <div
+                class="progress-fill"
+                id="shoppingBar">
+            </div>
+
+        </div>
+
+        <h3 id="shoppingProgress">
+
+            0% Purchased
+
+        </h3>
+
+        <ul id="shoppingList"></ul>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!--==========================
+    DAILY ROUTINE
+===========================-->
+
+<section class="routine-section">
+
+  <div class="routine-card">
+
+      <h2>🌅 Daily Routine</h2>
+
+      <div class="routine-container">
+
+          <!-- Morning -->
+
+          <div class="routine-box">
+
+              <h3>🌅 Morning Routine</h3>
+
+              <label><input type="checkbox" class="morning-task"> Wake Up</label>
+
+              <label><input type="checkbox" class="morning-task"> Pray Fajr</label>
+
+              <label><input type="checkbox" class="morning-task"> Make Bed</label>
+
+              <label><input type="checkbox" class="morning-task"> Brush Teeth</label>
+
+              <label><input type="checkbox" class="morning-task"> Drink Water</label>
+
+              <label><input type="checkbox" class="morning-task"> Exercise</label>
+
+              <label><input type="checkbox" class="morning-task"> Healthy Breakfast</label>
+
+              <label><input type="checkbox" class="morning-task"> Read Quran</label>
+
+              <div class="progress">
+
+                  <div id="morningProgress"></div>
+
+              </div>
+
+              <p id="morningText">
+
+                  0 / 8 Completed
+
+              </p>
+
+          </div>
+
+          <!-- Night -->
+
+          <div class="routine-box">
+
+              <h3>🌙 Night Routine</h3>
+
+              <label><input type="checkbox" class="night-task"> Finish Homework</label>
+
+              <label><input type="checkbox" class="night-task"> Pray Isha</label>
+
+              <label><input type="checkbox" class="night-task"> Brush Teeth</label>
+
+              <label><input type="checkbox" class="night-task"> Prepare School Bag</label>
+
+              <label><input type="checkbox" class="night-task"> Prepare Clothes</label>
+
+              <label><input type="checkbox" class="night-task"> Read Quran</label>
+
+              <label><input type="checkbox" class="night-task"> Sleep Before 10 PM</label>
+
+              <div class="progress">
+
+                  <div id="nightProgress"></div>
+
+              </div>
+
+              <p id="nightText">
+
+                  0 / 7 Completed
+
+              </p>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+</section>
+<section>
+    <!--==========================
+    BREATHING EXERCISE
+===========================-->
+
+<section class="breathing-section">
+
+  <div class="breathing-card">
+
+      <h2>🫁 Breathing Exercise</h2>
+
+      <div class="breathing-circle" id="breathingCircle">
+
+          <span id="breathingText">
+
+              Ready
+
+          </span>
+
+      </div>
+
+      <button id="startBreathing">
+
+          ▶ Start
+
+      </button>
+
+      <button id="stopBreathing">
+
+          ⏹ Stop
+
+      </button>
+
+  </div>
+
+</section>
+</section>
+
+<section>
+
+
+</section>
+</section>
+<section>
+    <!-- Prayer Times -->
+
+<section class="prayer-times" id="prayer-times">
+
+    <h2>🕌 Prayer Times</h2>
+
+    <div class="prayer-box">
+
+        <p id="prayerLocation">
+            📍 Loading location...
+        </p>
+
+
+        <div class="prayer-list">
+
+            <div>
+                🌅 Fajr
+                <span id="fajr">--:--</span>
+            </div>
+
+
+            <div>
+                ☀️ Dhuhr
+                <span id="dhuhr">--:--</span>
+            </div>
+
+
+            <div>
+                🌤️ Asr
+                <span id="asr">--:--</span>
+            </div>
+
+
+            <div>
+                🌇 Maghrib
+                <span id="maghrib">--:--</span>
+            </div>
+
+
+            <div>
+                🌙 Isha
+                <span id="isha">--:--</span>
+            </div>
+
+        </div>
+
+
+        <button onclick="loadPrayerTimes()">
+            🔄 Refresh Prayer Times
+        </button>
+
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= ISLAMIC CORNER ================= -->
+
+<section class="islamic-section">
+
+    <div class="islamic-card">
+
+        <h2>🕌 Islamic Corner</h2>
+
+        <p>Remember Allah through daily dhikr.</p>
+
+        <div class="tasbih-card">
+
+            <h3>📿 Digital Tasbih</h3>
+
+            <div class="tasbih-count" id="tasbihCount">
+
+                0
+
+            </div>
+
+            <div class="tasbih-buttons">
+
+                <button id="tasbihMinus">
+
+                    ➖
+
+                </button>
+
+                <button id="tasbihPlus">
+
+                    📿 Count
+
+                </button>
+
+                <button id="tasbihReset">
+
+                    🔄 Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section>
+    <!-- ================= GOOD DEEDS ================= -->
+
+<div class="gooddeeds-card">
+
+    <h3>⭐ Daily Good Deeds</h3>
+
+    <p>Complete your daily Islamic goals.</p>
+
+    <div class="deed-list">
+
+        <label><input type="checkbox" class="deed"> 🌅 Pray Fajr</label>
+
+        <label><input type="checkbox" class="deed"> ☀️ Pray Dhuhr</label>
+
+        <label><input type="checkbox" class="deed"> 🌤️ Pray Asr</label>
+
+        <label><input type="checkbox" class="deed"> 🌇 Pray Maghrib</label>
+
+        <label><input type="checkbox" class="deed"> 🌙 Pray Isha</label>
+
+        <label><input type="checkbox" class="deed"> 📖 Read Qur'an</label>
+
+        <label><input type="checkbox" class="deed"> 📿 Dhikr</label>
+
+        <label><input type="checkbox" class="deed"> 🤲 Make Dua</label>
+
+        <label><input type="checkbox" class="deed"> 😊 Smile at Someone</label>
+
+    </div>
+
+    <div class="deed-progress">
+
+        <div class="deed-progress-fill" id="deedFill"></div>
+
+    </div>
+
+    <h3 id="deedPercent">
+
+        0% Completed
+
+    </h3>
+
+</div>
+</section>
+<section>
+    <!-- ================= DAILY QURAN ================= -->
+
+<div class="quran-card">
+
+    <h3>📖 Daily Qur'an</h3>
+
+    <p class="quran-surah" id="surahName">
+
+        Loading...
+
+    </p>
+
+    <div class="arabic-text" id="arabicAyah">
+
+        Loading verse...
+
+    </div>
+
+    <div class="english-text" id="englishAyah">
+
+        Loading translation...
+
+    </div>
+
+    <div class="quran-buttons">
+
+        <button id="newAyah">
+
+            🔄 New Verse
+
+        </button>
+
+        <button id="copyAyah">
+
+            📋 Copy
+
+        </button>
+
+    </div>
+
+</div>
+</section>
+<section>
+    <!-- ================= DAILY DUA ================= -->
+
+<div class="dua-card">
+
+    <h3>🤲 Daily Dua</h3>
+
+    <p class="dua-title" id="duaTitle">
+
+        Loading...
+
+    </p>
+
+    <div class="dua-arabic" id="duaArabic">
+
+        Loading...
+
+    </div>
+
+    <div class="dua-transliteration" id="duaTransliteration">
+
+        Loading...
+
+    </div>
+
+    <div class="dua-meaning" id="duaMeaning">
+
+        Loading...
+
+    </div>
+
+    <div class="dua-buttons">
+
+        <button id="newDua">
+
+            🔄 New Dua
+
+        </button>
+
+        <button id="copyDua">
+
+            📋 Copy
+
+        </button>
+
+    </div>
+
+</div>
+</section>
+<section>
+    <!-- ================= DAILY HADITH ================= -->
+
+<div class="hadith-card">
+
+    <h3>📚 Daily Hadith</h3>
+
+    <p class="hadith-reference" id="hadithReference">
+
+        Loading...
+
+    </p>
+
+    <div class="hadith-text" id="hadithText">
+
+        Loading Hadith...
+
+    </div>
+
+    <div class="hadith-buttons">
+
+        <button id="newHadith">
+
+            🔄 New Hadith
+
+        </button>
+
+        <button id="copyHadith">
+
+            📋 Copy
+
+        </button>
+
+    </div>
+
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            🌍 <span>Life OS</span>
+
+        </div>
+
+        <p class="footer-text">
+
+            Organize your life. Build healthy habits. Achieve your goals.
+
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#">Home</a>
+            <a href="#">Health</a>
+            <a href="#">Habits</a>
+            <a href="#">Shopping</a>
+            <a href="#">Goals</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 Life OS • Designed & Developed by Abdullah ❤️
+
+        </p>
+
+    </div>
+
+</footer>
+    <!-- ================= Footer ================= -->
+
+    <footer>
+
+        © 2026 OS Smart • Life OS
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

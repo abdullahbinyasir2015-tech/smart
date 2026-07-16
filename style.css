@@ -1,0 +1,514 @@
+/* Navigation Bar */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    z-index:1000;
+
+}
+
+.nav-left{
+
+    font-size:24px;
+    font-weight:600;
+
+}
+
+.nav-left span{
+
+    margin-left:8px;
+
+}
+
+.nav-center{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+}
+
+.nav-right{
+
+    display:flex;
+    gap:10px;
+
+}
+
+.nav-btn{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+    background:#2563eb;
+
+    transform:rotate(15deg) scale(1.1);
+
+}
+   body{ 
+    margin:0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+button{
+    padding:12px 25px;
+    margin:10px;
+    cursor:pointer;
+}
+.logo{
+    text-align:center;
+    margin-top:40px;
+}
+
+.logo svg{
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.logo svg:hover{
+    transform:rotate(10deg) scale(1.08);
+}
+
+.logo h1{
+    margin-top:10px;
+    font-size:40px;
+    color:#2563EB;
+    font-family:Arial,sans-serif;
+}
+
+.logo p{
+    color:#555;
+    margin-top:5px;
+}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+
+.hero{
+    text-align:center;
+    padding:50px 20px 30px;
+    animation:fadeIn 1s ease;
+}
+
+.logo svg{
+    transition:.4s;
+}
+
+.logo svg:hover{
+    transform:rotate(10deg) scale(1.1);
+}
+
+.hero h1{
+    margin-top:15px;
+    font-size:50px;
+    font-weight:700;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+    color:#dbeafe;
+}
+
+/* Cards */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:40px 0;
+}
+
+.card{
+    width:320px;
+    padding:35px;
+    text-align:center;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+
+}
+
+.icon{
+    font-size:70px;
+}
+
+.card h2{
+    margin-top:20px;
+    font-size:30px;
+}
+
+.card p{
+    margin:20px 0;
+    color:#e5e7eb;
+    line-height:1.6;
+}
+
+/* Buttons */
+
+button{
+
+    width:170px;
+    height:50px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#16a34a;
+
+    transform:scale(1.08);
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:auto;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#dbeafe;
+
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.card{
+
+    width:100%;
+
+}
+
+}
+/* ===== NAVBAR ===== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.os-logo{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+}
+
+.nav-center{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.search-bar{
+
+    width:420px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:30px;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+}
+
+.search-bar::placeholder{
+    color:#ddd;
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.status{
+    font-size:18px;
+}
+
+.circle-btn{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    transition:.3s;
+}
+
+.circle-btn:hover{
+
+    transform:scale(1.1);
+
+    background:#2563eb;
+
+}
+/* ===========================
+   Entrance Animations
+=========================== */
+
+.hero{
+    animation:heroFade 1s ease forwards;
+}
+
+.card{
+    opacity:0;
+    transform:translateY(50px);
+    animation:cardUp .8s ease forwards;
+}
+
+.card:nth-child(1){
+    animation-delay:.3s;
+}
+
+.card:nth-child(2){
+    animation-delay:.6s;
+}
+
+footer{
+    opacity:0;
+    animation:fadeIn 1s ease forwards;
+    animation-delay:.9s;
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+.card{
+    animation:
+        cardUp .8s ease forwards,
+        floatCard 4s ease-in-out infinite;
+}
+
+.card:nth-child(1){
+    animation-delay:.3s,.3s;
+}
+
+.card:nth-child(2){
+    animation-delay:.6s,.6s;
+}
+
+/* ===========================
+   Keyframes
+=========================== */
+
+@keyframes heroFade{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes cardUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes floatCard{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+

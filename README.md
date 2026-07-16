@@ -1,1 +1,79 @@
-# smart
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Smart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="nav-left">
+        <div class="os-logo">🖥️</div>
+        <h2>OS Smart</h2>
+    </div>
+
+    <div class="nav-center">
+        <input
+            type="text"
+            placeholder="🔍 Search OS Smart..."
+            class="search-bar"
+        >
+    </div>
+
+    <div class="nav-right">
+        <span class="status">📶</span>
+        <span class="status">🔔</span>
+        <span id="date"></span>
+
+        <button id="themeBtn" class="circle-btn">🌙</button>
+        <button class="circle-btn">⚙️</button>
+    </div>
+
+</nav>
+
+<header class="hero">
+    <div class="logo">
+        <svg width="80" height="80" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#2563EB"/>
+            <rect x="25" y="25" width="50" height="35" rx="5" fill="white"/>
+            <rect x="30" y="30" width="40" height="25" rx="3" fill="#2563EB"/>
+            <rect x="45" y="60" width="10" height="8" fill="white"/>
+            <rect x="35" y="68" width="30" height="5" rx="2" fill="white"/>
+            <circle cx="65" cy="35" r="3" fill="#22C55E"/>
+        </svg>
+    </div>
+
+    <h1>OS Smart</h1>
+    <p>Your Smart Digital Dashboard</p>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <div class="icon">🌍</div>
+        <h2>Life OS</h2>
+        <p>Manage your daily life with powerful smart tools.</p>
+        <a href="life.html"><button>Open</button></a>
+    </div>
+
+    <div class="card">
+        <div class="icon">📚</div>
+        <h2>Study OS</h2>
+        <p>Everything you need for studying and school.</p>
+        <a href="study.html"><button>Open</button></a>
+    </div>
+
+</main>
+
+<footer>
+    <p>Version 1.0</p>
+    <p>© 2026 OS Smart</p>
+</footer>
+
+</body>
+</html>
